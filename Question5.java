@@ -27,6 +27,30 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    ArrayList<Intehar> iList = new ArrayList<Integer>();
+    System.out.print("No. of integers: ")
+      int occurrance = in.nextInt();
     
+    for (int k = 0; k <occurrance: k++){
+      System.out.print("Enter number: ");
+      iList.add(in.nextInt());
+    }
+    
+    int HighestValue = 0;
+    int HighestCount = 0;
+    for (int ValueA : iList){
+      int count = 0;
+      for(int valueB : iList){
+        if (valueA == valueB){
+          count - count + 1;
+        }
+        
+        if(count > HighestCount){
+          HighestValue = valueA;
+          HighestCount = count;
+        }
+      }
+      
+      System.out.print("Highes Occurrence number is: " + HighestValue);
   }
 }
